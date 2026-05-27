@@ -10,8 +10,13 @@ public class aulaLeituraDados {
         System.out.println(filmeFavorito);
 
         //Pede ano de lançamento
-        System.out.println("Quero saber o ano de lançamento");
+        System.out.println("Quero saber o ano de lançamento: ");
         int anoLancamento = leitura.nextInt();
         System.out.println(anoLancamento);
+
+        //Pede avaliação do filme
+        System.out.println("Diga sua avaliação sobre o filme: ");
+        double avaliacao = leitura.nextDouble();
+
     }
 }
