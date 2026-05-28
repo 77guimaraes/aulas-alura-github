@@ -16,6 +16,13 @@ public class jogoDeAdivinhacao {
             numeroDigitado = leitor.nextInt();
             tentativas++;
 
+            if (numeroDigitado == numeroGerado) {
+                System.out.println("Parabéns! Você acerto em " + tentativas + " tentativas.");
+                break;
+            } else if  (numeroDigitado < numeroGerado) {
+                System.out.println("O numero informado é menor que o número secreto. Você tem " + tentativas + " tentativas.");
+            } else {
+                System.out.println("O número informado é maior que o número secreto. Você tem " + tentativas + " tentativas.");
             }
         }
     }
