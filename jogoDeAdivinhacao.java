@@ -24,6 +24,10 @@ public class jogoDeAdivinhacao {
             } else {
                 System.out.println("O número informado é maior que o número secreto. Você tem " + tentativas + " tentativas.");
             }
+
+            if (tentativas == 5 && numeroDigitado != numeroGerado) {
+                System.out.println("Não foi dessa vez. Suas tentativas acabaram. O número era " + numeroGerado);
+            }
         }
     }
 }
