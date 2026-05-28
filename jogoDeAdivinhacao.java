@@ -20,9 +20,9 @@ public class jogoDeAdivinhacao {
                 System.out.println("Parabéns! Você acerto em " + tentativas + " tentativas.");
                 break;
             } else if  (numeroDigitado < numeroGerado) {
-                System.out.println("O numero informado é menor que o número secreto. Você tem " + tentativas + " tentativas.");
+                System.out.println("O numero informado é menor que o número secreto. Tente novamente.");
             } else {
-                System.out.println("O número informado é maior que o número secreto. Você tem " + tentativas + " tentativas.");
+                System.out.println("O número informado é maior que o número secreto. Tente novamente.");
             }
 
             if (tentativas == 5 && numeroDigitado != numeroGerado) {
