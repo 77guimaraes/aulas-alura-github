@@ -31,7 +31,19 @@ public class desafioBancario {
 
             //Opção 1 - Visualizar Saldo
             if (opcao == 1) {
-                System.out.println("Seu saldo atual é: " + saldo);
+                System.out.println(String.format("Seu saldo atual é: R$ %.2f", saldo));
+            }
+            //Opção 2 - Transferir valor
+            else if (opcao == 2) {
+                System.out.println("Informe o valor a transferir: ");
+                double valor = leitura.nextDouble();
+
+                    if (valor > saldo) {
+                        System.out.println("Saldo insuficiente.");
+                    } else {
+                        saldo -= valor;
+                        System.out.println("Transferencia realizada com sucesso.");
+                }
             }
         }
     }
