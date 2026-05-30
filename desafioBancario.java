@@ -52,7 +52,15 @@ public class desafioBancario {
                 saldo += valor;
                 System.out.println(String.format("Valor recebido! Seu saldo atual é: R$ %.2f", saldo));
             }
-
+            //Opção 4 - sair
+            else if (opcao == 4) {
+                System.out.println("Obrigado e volte sempre!");
+                break;
+            }
+            //Opção inválida
+            else if (opcao <= 0 || opcao > 4 ) {
+                System.out.println("Opção inválida.");
+            }
         }
     }
 }
