@@ -1,4 +1,5 @@
 import java.util.Scanner;
+
 public class desafioBancario {
     public static void main(String[] args) {
 
@@ -23,10 +24,15 @@ public class desafioBancario {
                 2 - Transferir Valor;
                 3 - Receber Valor;
                 4 - Sair.""";
-        System.out.println(menu);
 
         while (opcao != 4){
+            System.out.println(menu);
+            opcao = leitura.nextInt();
 
+            //Opção 1 - Visualizar Saldo
+            if (opcao == 1) {
+                System.out.println("Seu saldo atual é: " + saldo);
+            }
         }
     }
 }
